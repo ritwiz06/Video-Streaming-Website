@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>CSS BOX MODEL</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+           
+            body{
+                margin: auto;
+                padding: 0;
+                height: 100%;
+                border: 18px solid #0066cc;
+                border-radius: 20px;
+                
+            }
+            #heading{
+                width: 80%;
+                margin: 60px auto 20px;
+                border: 17px solid blue;
+                outline: 9px solid red;
+            }
+            h1{
+                text-align: center;
+                padding: 20px;
+            }
+            #holder{
+                margin-top:40px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 75px;
+                width: 79%;
+                border: 4px solid #663300;
+
+            }
+            #top{
+                width: 99%;
+                margin: 5px auto;
+                border-bottom: 1.8px solid gray;
+
+            }
+            #mid{
+                width: 99%;
+                margin: 5px auto;
+                border-bottom: 1.8px solid gray;
+
+            }
+            #low{
+                width: 99%;
+                margin: 5px auto;
+
+            }
+            #c1{
+                width: 60%;
+                margin: 8px auto;
+                border: 2px dashed #F08A38;
+                background-color: #FFFFDE;
+                padding: 10px;
+            }
+            #c2{
+                background-color: #DEFFFF;
+                width: 30%;
+                margin: 10px  ;
+                border-top: 6px double black;
+                border-bottom: 6px double black;
+                padding: 10px;
+            }
+            #c3{
+                border-style: inset;
+                background-color:#e8bc6f;
+                border: 7px ridge #d4966a;
+                width: 50%;
+                margin: 10px 42% ;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="heading">
+            <h1>CSS Box Models</h1>
+        </div>
+        <div id="holder">
+            <div id="top"><p id="c1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a diam diam. Aliquam elementum magna magna, at varius nisl feugiat pellentesque. Nunc vel venenatis nisi. Aliquam ultricies molestie libero.  </p></div>
+            <div id="mid"><p id="c2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a diam diam. Aliquam elementum magna magna, at varius nisl feugiat pellentesque. Nunc vel venenatis nisi. Aliquam ultricies molestie libero.Lorem ipsum dolor sit amet, consectetur adipiscing elit.  </p></div>
+            <div id="low"><p id="c3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a diam diam. Aliquam elementum magna magna, at varius nisl feugiat pellentesque. Nunc vel venenatis nisi. Aliquam ultricies molestie libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p></div>
+        </div>
+    </body>
+</html>

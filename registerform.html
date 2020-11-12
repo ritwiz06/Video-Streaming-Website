@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Registration Form</title>
+<style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+                margin:0;
+                padding: 0;
+            }
+            #top{
+                background-color: #65c288;
+                height: 70px;
+            }
+            form{
+                margin-left: 15px;
+                font-family: sans-serif;
+                font-family: 117%;
+                font-weight: 650;
+            }
+            form input{
+                border: 1px solid grey;
+                border-radius: 5px;
+            }
+            h1{
+                font-size: 230%;
+                font-weight: bold;
+            }
+            #red{
+                color:red;
+            }
+            #yes,#no{
+                font-weight: 400;
+            }
+            #heading{
+                font-size: 120%;
+                font-weight: 650;
+            }
+            #name{
+                height: 30px;
+                width: 300px; 
+            }
+            #fname{
+                font-weight: 750;
+                font-size: 10px;
+            }
+            #lname{
+                font-weight: 750;
+                font-size: 10px;
+                margin-left: 250px;
+            }
+            
+
+            #phcode{
+                height: 30px;
+                width: 60px;
+            }
+            #ph{
+                height: 30px;
+                width: 186px;
+            }
+            #sms{
+                height: 30px;
+                width: 300px;
+            }
+            #nums{
+                padding-right: 10px;
+                font-size: 110%;
+                font-weight: 500;
+            }
+            #button{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 17px 50px;
+                
+                border: 4px ridge #84e08f;
+                border-radius: 20px;
+                background-color: #65c288;
+                margin: 40px auto;
+                color: white;
+                font-size: 120%;
+                box-shadow: 3px 3px gray;
+                border-style: outset;
+            }
+        </style>
+</head>
+ <body>
+    <div id=top>
+    </div>
+    <form id="regform">
+        <h1>Event Registration</h1>
+        <label id="heading" for="radio">Will you be attending this event ?<span id="red"> *</span></label><br><br>
+        <input id="yes" type="radio" name="Yes" value="Yes" required> 
+        <label id="yes" for="yes">Yes</label><br>
+        <input id="no" type="radio" name="Yes" value="No" required>
+        <label id="no" for="no">No</label>
+        <br><br>
+        <label id="heading">Name<span id="red"> *</span></label><br>
+        <input type="text" id="name" required>
+        <input type="text" id="name" required><br>
+        <span id="fname">First Name</span>
+        <span id="lname">Last Name</span><br><br>
+        <label id="heading">Email<span id="red"> *</span></label><br>
+        <input type="text" id="name" placeholder="user@example.com" required><br><br>
+        <label id="heading">Phone number<span id="red">*</span></label><br>
+        <input type="number" id="phcode" required>
+        <input type="number" id="ph" placeholder="222-2222" required><br><br>
+        <label id="heading">SMS number<span id="red"> *</span></label><br>
+        <input type="number" id="phcode" required>
+        <input type="number" id="sms"required><br><br>
+        <label id="heading">How many guests?<span id="red"> *</span></label><br>
+        <select name="guests" id="nums"  placeholder="Please Choose" required>
+            	<option value="0"  >Please Choose</option>
+                <option value="1"  >1</option>
+                <option value="2" >2</option>
+                <option value="3" >3</option>
+                <option value="4" >4</option>
+                <option value="5" >5</option>
+                <option value="8.." >More than 5</option>
+            </select>
+        </form>
+        <input type="submit"  form="regform" id="button" value="Register">
+</html>
